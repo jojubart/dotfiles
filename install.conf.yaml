@@ -6,8 +6,13 @@
 - clean: ['~']
 
 - link:
-    # neovim stuff
+    # neovim 
     ~/.config/nvim: nvim
+
+    #zsh
+    ~/.zshrc: zshrc
+    ~/zsh-autosuggestions: zsh-autosuggestions
+    ~/.oh-my-zsh: oh-my-zsh
 
 - shell:
    - [git submodule update --init --recursive, Installing submodules]
