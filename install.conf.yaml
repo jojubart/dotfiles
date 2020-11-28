@@ -11,10 +11,14 @@
     ~/.config/nvim: nvim
 
     #zsh
-    ~/.zshrc: zsh/zshrc
+    ~/.zshrc: zsh/zshrc.zsh
+    ~/.alias: zsh/alias.zsh
+    #~/antigen: zsh/antigen.zsh
     #~/.zshenv: zsh/zshenv
     ~/zsh-autosuggestions: zsh-autosuggestions/*
     #~/.oh-my-zsh: oh-my-zsh
 
 - shell:
    - [git submodule update --init --recursive, Installing submodules]
+   - [curl -L git.io/antigen > ~/antigen.zsh]
+     # - [echo "Enter password if you want to change shell to ZSH"; sudo chsh -s $(which zsh) $(whoami)]
