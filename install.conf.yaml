@@ -2,6 +2,7 @@
     link:
       relink: true
       create: true
+      glob: true
 
 - clean: ['~']
 
@@ -12,7 +13,7 @@
     #zsh
     ~/.zshrc: zsh/zshrc
     #~/.zshenv: zsh/zshenv
-    ~/zsh-autosuggestions: zsh-autosuggestions
+    ~/zsh-autosuggestions: zsh-autosuggestions/*
     #~/.oh-my-zsh: oh-my-zsh
 
 - shell:
