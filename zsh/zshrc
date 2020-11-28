@@ -1,0 +1,12 @@
+export PATH="/usr/local/bin:$PATH"
+export PATH="/usr/local/bin:$PATH"
+
+
+
+source ~/zsh-autosuggestions/zsh-autosuggestions.zsh
+eval "$(fasd --init auto)"
+
+source ~/Library/Preferences/org.dystroy.broot/launcher/bash/br
+
+source ~/.bash_profile
+alias daily_lookup="cd /Users/jjs/Dropbox/KnowledgeBase; rg -t md -l '\[\#DailyLookup\]' | gshuf -n 1 | xargs -I{} open {}"
