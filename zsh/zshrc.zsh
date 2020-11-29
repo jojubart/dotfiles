@@ -10,6 +10,7 @@ export PATH="/usr/local/bin:$PATH"
 source ~/.alias
 source ~/antigen.zsh
 source ~/zsh-autosuggestions/zsh-autosuggestions.zsh
+setopt HIST_IGNORE_DUPS
 
 #source ~/.bash_profile
 
