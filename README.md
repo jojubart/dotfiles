@@ -2,7 +2,8 @@
 
 ### Requirements
 Set zsh as your default shell:
-	 chsh -s $(which zsh) 
+
+    chsh -s $(which zsh)
 
 ### Steps
 - Clone this repository into a folder that's something along the lines of ~/dotfiles
