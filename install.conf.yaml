@@ -13,6 +13,7 @@
     #zsh
     ~/.zshrc: zsh/zshrc.zsh
     ~/.alias: zsh/alias.zsh
+    ~/.functions: zsh/functions.zsh
     ~/zsh-autosuggestions: zsh-autosuggestions/*
 
 - shell:

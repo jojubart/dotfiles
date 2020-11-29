@@ -9,6 +9,7 @@ export PATH="/usr/local/bin:$PATH"
 export EDITOR=nvim
 
 source ~/.alias
+source ~/.functions
 source ~/antigen.zsh
 source ~/zsh-autosuggestions/zsh-autosuggestions.zsh
 setopt HIST_IGNORE_DUPS
