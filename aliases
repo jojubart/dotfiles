@@ -1,3 +1,0 @@
-alias cr="cargo run"
-alias cc="cargo clippy"
-alias ct="cargo test"
