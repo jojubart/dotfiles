@@ -1,5 +1,7 @@
 # Git
 alias g="git"
+alias cm="commit -m"
+alias ga="git add --a"
 
 # Easier navigation: .., ..., ...., ....., ~ and -
 alias ..="cd .."
