@@ -11,7 +11,7 @@ source ~/.alias
 source ~/antigen.zsh
 source ~/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-source ~/.bash_profile
+#source ~/.bash_profile
 
 #alias daily_lookup="cd ~/Dropbox/KnowledgeBase; rg -t md -l '\[\#DailyLookup\]' | gshuf -n 1 | xargs -I{} open {}"
 
