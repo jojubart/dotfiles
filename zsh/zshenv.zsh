@@ -20,18 +20,18 @@ setopt HIST_IGNORE_DUPS
 
 # Antigen Settings
 # Load the theme.
-antigen theme robbyrussell
-antigen bundle z
-antigen bundle zsh-users/zsh-syntax-highlighting
-antigen bundle zsh-users/zsh-history-substring-search
-antigen theme romkatv/powerlevel10k
+#antigen theme robbyrussell
+#antigen bundle z
+#antigen bundle zsh-users/zsh-syntax-highlighting
+#antigen bundle zsh-users/zsh-history-substring-search
+#antigen theme romkatv/powerlevel10k
 
 
 #antigen bundle mafredri/zsh-async
 #antigen bundle sindresorhus/pure
 #
 # Tell Antigen that you're done.
-antigen apply
+#antigen apply
 
 # zsh-history-substring-search configuration
 # (put whatever configuration you want here!)
