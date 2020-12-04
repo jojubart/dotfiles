@@ -30,5 +30,5 @@ alias mv='mv -i'
 
 # Rust
 alias cr="cargo run"
-alias cc="cargo check"
+alias cc="cargo clippy"
 alias ct="cargo test"
