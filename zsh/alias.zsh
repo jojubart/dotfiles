@@ -32,3 +32,6 @@ alias mv='mv -i'
 alias cr="cargo run"
 alias cc="cargo clippy"
 alias ct="cargo test"
+
+# open daily_note
+alias dn="nvim ~/Dropbox/daily_notes/daily_`/usr/local/opt/coreutils/bin/gdate -I`.md"

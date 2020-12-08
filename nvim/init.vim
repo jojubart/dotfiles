@@ -6,6 +6,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'ciaranm/securemodelines'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'justinmk/vim-sneak'
+Plug 'jiangmiao/auto-pairs'
 
 " GUI enhancements
 Plug 'itchyny/lightline.vim'
