@@ -28,6 +28,10 @@ alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
 
+# Python
+alias python="python3"
+alias pip="pip3"
+
 # Rust
 alias cr="cargo run"
 alias cc="cargo clippy"
@@ -35,3 +39,4 @@ alias ct="cargo test"
 
 # open daily_note
 alias dn="nvim ~/Dropbox/daily_notes/daily_`/usr/local/opt/coreutils/bin/gdate -I`.md"
+alias goals="nvim ~/Dropbox/daily_notes/goals.md"
