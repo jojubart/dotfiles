@@ -15,7 +15,10 @@ Set zsh as your default shell (on Ubuntu):
 - Clone this repository into a folder that's something along the lines of ~/dotfiles
 - change to the newly created folder
 - enter ./install to run the dotbot
-
+- inside neovim:
+    - `:PlugInstall`
+    - `:call coc#util#install()`
+    - (optional for Rust) `:CocInstall coc-rust-analyzer`
 
 In one step, you could just do: 
 `git clone $url && cd dotfiles && ./install`
