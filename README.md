@@ -5,6 +5,7 @@ Set zsh as your default shell (on Ubuntu):
     
     sudo apt-get update
     sudo apt-get install zsh
+    sudo apt install neovim
     chsh -s $(which zsh)
 
 ### Steps
