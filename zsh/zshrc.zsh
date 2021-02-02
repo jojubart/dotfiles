@@ -7,6 +7,14 @@ fi
 
 export PATH="/usr/local/bin:$PATH"
 export EDITOR=nvim
+export HISTFILE=~/.zsh_history
+export HISTFILESIZE=1000000000
+export HISTSIZE=1000000000
+
+setopt INC_APPEND_HISTORY
+export HISTTIMEFORMAT="[%F %T] "
+setopt EXTENDED_HISTORY
+setopt HIST_FIND_NO_DUPS
 
 source ~/.alias
 source ~/.functions
@@ -41,3 +49,5 @@ HISTORY_SUBSTRING_SEARCH_ENSURE_UNIQUE=1
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
