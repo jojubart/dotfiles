@@ -21,7 +21,10 @@ Set zsh as your default shell (on Ubuntu):
     - `zsh`
     - optional for Rust:
         - `:CocInstall coc-rust-analyzer`
-        - `sudo apt install build-essential`
+        - `sudo apt-get install build-essential`
+        - `sudo apt install pkg-config`
+        - `sudo apt install libssl-dev`
+	  
     
 
 In one step, you could just do: 
