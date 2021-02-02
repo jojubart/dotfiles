@@ -19,7 +19,9 @@ Set zsh as your default shell (on Ubuntu):
     - `:PlugInstall`
     - `:call coc#util#install()`
     - `zsh`
-    - (optional for Rust) `:CocInstall coc-rust-analyzer`
+    - optional for Rust:
+        - `:CocInstall coc-rust-analyzer`
+        - `sudo apt install build-essential`
     
 
 In one step, you could just do: 
