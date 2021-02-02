@@ -18,7 +18,9 @@ Set zsh as your default shell (on Ubuntu):
 - inside neovim:
     - `:PlugInstall`
     - `:call coc#util#install()`
+    - `zsh`
     - (optional for Rust) `:CocInstall coc-rust-analyzer`
+    
 
 In one step, you could just do: 
 `git clone $url && cd dotfiles && ./install`
