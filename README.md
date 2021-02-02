@@ -5,7 +5,7 @@ Set zsh as your default shell (on Ubuntu):
     
     sudo apt-get update
     sudo apt-get install zsh
-    sudo chsh -s $(which zsh)
+    sudo chsh -s /bin/zsh <myUserName>
     sudo apt install neovim
     sudo apt install nodejs
     curl --compressed -o- -L https://yarnpkg.com/install.sh | bash
