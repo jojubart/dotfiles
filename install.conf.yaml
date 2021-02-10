@@ -19,4 +19,5 @@
 - shell:
    - [git submodule update --init --recursive, Installing submodules]
    - [curl -L git.io/antigen > ~/antigen.zsh]
+   - [/bin/zsh -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"]
      # - [echo "Enter password if you want to change shell to ZSH"; sudo chsh -s $(which zsh) $(whoami)]

@@ -6,6 +6,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 export PATH="/usr/local/bin:$PATH"
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 export EDITOR=nvim
 
 source ~/.alias
@@ -13,6 +14,15 @@ source ~/.functions
 source ~/antigen.zsh
 source ~/zsh-autosuggestions/zsh-autosuggestions.zsh
 setopt HIST_IGNORE_DUPS
+
+  vscodetmp () {
+    local repo=$1
+    [[ ! $repo =~ "https://*" ]] && repo="https://github.com/${repo}"
+    local temp="$(mktemp -d)"
+    git clone "${repo}" "${temp}"
+    code --wait -n "${temp}"
+    rm -rf "${temp}"
+  }
 
 #source ~/.bash_profile
 
