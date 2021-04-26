@@ -332,8 +332,9 @@ endif
 au Filetype rust source ~/.config/nvim/scripts/spacetab.vim
 au Filetype rust set colorcolumn=100
 
-" Markdown
+" Markdown/TEX
 au Filetype markdown set colorcolumn=120
+au Filetype tex set colorcolumn=120
 
 " Help filetype detection
 autocmd BufRead *.plot set filetype=gnuplot
