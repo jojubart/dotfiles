@@ -1,7 +1,10 @@
+# vim
+alias vim="nvim"
 # Git
 alias g="git"
 alias cm="commit -m"
 alias ga="git add --a"
+alias gcm="git commit -m"
 
 # Easier navigation: .., ..., ...., ....., ~ and -
 alias ..="cd .."
@@ -38,5 +41,4 @@ alias cc="cargo clippy"
 alias ct="cargo test"
 
 # open daily_note
-alias dn="nvim ~/Dropbox/daily_notes/daily_`/usr/local/opt/coreutils/bin/gdate -I`.md"
 alias goals="nvim ~/Dropbox/daily_notes/goals.md"

@@ -7,10 +7,15 @@ fi
 
 export PATH="/usr/local/bin:$PATH"
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+export PATH="/Users/jjs/.local/bin:$PATH"
 export EDITOR=nvim
 export HISTFILE=~/.zsh_history
 export HISTFILESIZE=1000000000
 export HISTSIZE=1000000000
+export TERM="xterm-256color"
+
+
+
 
 setopt INC_APPEND_HISTORY
 export HISTTIMEFORMAT="[%F %T] "
@@ -61,3 +66,8 @@ HISTORY_SUBSTRING_SEARCH_ENSURE_UNIQUE=1
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+
+#export PATH="/Users/jjs/.pyenv/shims:${PATH}"
+#eval "$(pyenv init -)"
+#export PATH="/usr/local/opt/python@3.8/bin:$PATH"

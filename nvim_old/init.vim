@@ -14,6 +14,10 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'machakann/vim-highlightedyank'
 Plug 'rafi/awesome-vim-colorschemes'
 
+" ChatGPT
+Plug 'nvim-lua/plenary.nvim'
+Plug 'MunifTanjim/nui.nvim'
+Plug 'dpayne/CodeGPT.nvim'
 
 " Fuzzy finder
 Plug 'airblade/vim-rooter'
