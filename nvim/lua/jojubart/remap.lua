@@ -2,6 +2,9 @@ vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
 -- PRIMEAGEN REMAPS
+vim.keymap.set('c', '<tab>', '<C-z>', { silent = false })
+
+
 
 vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
@@ -37,7 +40,7 @@ vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz")
 vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
-vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
+-- vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
 --vim.keymap.set("n", "<leader>vpp", "<cmd>e ~/.dotfiles/nvim/.config/nvim/lua/theprimeagen/packer.lua<CR>");
 --vim.keymap.set("n", "<leader>mr", "<cmd>CellularAutomaton make_it_rain<CR>");
@@ -47,14 +50,34 @@ vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 --end)
 --
 --
+vim.keymap.set("n", "<leader>q", function()
+    --Exit from terminal mode
+    vim.cmd("tnoremap <esc> <C-\\><C-n>")
+end)
+
+-- remap netest: test this file only (not the whole suite) in command mode
+-- lua require("neotest").run.run(vim.fn.expand("%"))
+vim.keymap.set("n", "<leader>nt", "<cmd>lua require('neotest').run.run(vim.fn.expand('%'))<CR>")
+vim.keymap.set("n", "<leader>nta", "<cmd>lua require('neotest').run.run()<CR>")
+vim.keymap.set("n", "<leader>ntx", "<cmd>lua require('neotest').run.stop()<CR>")
+vim.keymap.set("n", "<leader>nts", "<cmd>lua require('neotest').summary.open()<CR>")
+vim.keymap.set("n", "<leader>ntc", "<cmd>lua require('neotest').summary.close()<CR>")
+vim.keymap.set("n", "<leader>nto", "<cmd>lua require('neotest').output.open({ enter = true })<CR>")
+vim.keymap.set("n", "<leader>ntp", "<cmd>  lua require('neotest').output_panel.open()<CR>")
+
+
+-- shortcut to run pytest OPEN_FILE
+vim.keymap.set("n", "<leader>pt", "<cmd>:term pytest %<CR>")
+
+
+
 
 
 -- =============================================================================
 -- # Keyboard shortcuts
 -- =============================================================================
-vim.keymap.set({"n", "v" }, "H", "^", {noremap=false})
-vim.keymap.set({"n", "v"}, "L", "$", {noremap=true})
-
+vim.keymap.set({"n", "v", "o" }, "H", "^", {noremap=false})
+vim.keymap.set({"n", "v", "o"}, "L", "$", {noremap=true})
 
 -- Left and right can switch buffers
 vim.keymap.set("n", "<left>", ":bp<CR>")

@@ -1,4 +1,4 @@
 */.DS_Store
 .DS_Store
 secrets.*
-*/codegpt.lua
+nvim/after/plugin/codegpt.lua
