@@ -114,4 +114,6 @@ return require("packer").startup(function(use)
 	})
 
     use('justinmk/vim-sneak')
+    use ('arkav/lualine-lsp-progress')
+
 end)
