@@ -87,6 +87,10 @@ vim.keymap.set("n", "<right>", ":bn<CR>")
 vim.keymap.set("n", "j", "gj")
 vim.keymap.set("n", "k", "gk")
 
+-- go to next method
+vim.keymap.set("n", "[[" , "[m")
+vim.keymap.set("n", "]]" , "]m")
+
 -- exit from terminal mode
 --vim.keymap.set("t", "<esc>", "<C-\><C-N>")
 
@@ -102,5 +106,5 @@ vim.keymap.set("n", "<leader>w", ":w<CR>")
 -- Improve Copy Paste Behavior
 vim.keymap.set("n", "<leader>y", "*y")
 vim.keymap.set("n", "<leader>Y", "+y")
-vim.keymap.set("n", "<leader>p", "*p")
+--vim.keymap.set("n", "<leader>p", "*p")
 vim.keymap.set("n", "<leader>P", "+p")
