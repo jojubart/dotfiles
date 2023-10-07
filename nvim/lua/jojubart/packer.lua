@@ -113,7 +113,10 @@ return require("packer").startup(function(use)
 		requires = { "kyazdani42/nvim-web-devicons", opt = true },
 	})
 
+
     use('justinmk/vim-sneak')
     use ('arkav/lualine-lsp-progress')
+
+    use ('james1236/backseat.nvim')
 
 end)

@@ -28,3 +28,6 @@ vim.opt.updatetime = 50
 
 vim.opt.colorcolumn = "80"
 
+-- Enable ignorecase and smartcase
+vim.o.ignorecase = true
+vim.o.smartcase = true
