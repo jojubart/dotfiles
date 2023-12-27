@@ -117,6 +117,5 @@ return require("packer").startup(function(use)
 	use("arkav/lualine-lsp-progress")
 
 	use("james1236/backseat.nvim")
-    use("windwp/nvim-ts-autotag")
-
+	use("windwp/nvim-ts-autotag")
 end)
