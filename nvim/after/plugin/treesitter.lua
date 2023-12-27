@@ -1,6 +1,24 @@
 require("nvim-treesitter.configs").setup({
 	-- A list of parser names, or "all" (the five listed parsers should always be installed)
-	ensure_installed = { "python", "javascript", "typescript", "sql", "rust", "c", "lua", "vim", "help", "query" },
+	ensure_installed = {
+		"python",
+		"javascript",
+		"typescript",
+		"sql",
+		"rust",
+		"c",
+		"lua",
+		"vim",
+		"help",
+		"query",
+	},
+	-- autoclose tags
+	autotag = {
+		enable = true,
+		enable_rename = true,
+		enable_close = true,
+		enable_close_on_slash = true,
+	},
 	-- Install parsers synchronously (only applied to `ensure_installed`)
 	sync_install = false,
 	-- Automatically install missing parsers when entering buffer
@@ -16,8 +34,5 @@ require("nvim-treesitter.configs").setup({
 		-- Using this option may slow down your editor, and you may see some duplicate highlights.
 		-- Instead of true it can also be a list of languages
 		additional_vim_regex_highlighting = false,
-	},
-	autotag = {
-		enable = true,
 	},
 })

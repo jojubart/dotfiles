@@ -106,17 +106,17 @@ return require("packer").startup(function(use)
 		end,
 	})
 
-	use("airblade/vim-gitgutter")
+	-- use("airblade/vim-gitgutter")
 
 	use({
 		"nvim-lualine/lualine.nvim",
 		requires = { "kyazdani42/nvim-web-devicons", opt = true },
 	})
 
+	use("justinmk/vim-sneak")
+	use("arkav/lualine-lsp-progress")
 
-    use('justinmk/vim-sneak')
-    use ('arkav/lualine-lsp-progress')
-
-    use ('james1236/backseat.nvim')
+	use("james1236/backseat.nvim")
+    use("windwp/nvim-ts-autotag")
 
 end)
