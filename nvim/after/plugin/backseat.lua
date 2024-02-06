@@ -1,11 +1,10 @@
 require("backseat").setup({
-            openai_api_key = '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', -- Get yours from platform.openai.com/account/api-keys
-            openai_model_id = 'gpt-3.5-turbo', --gpt-4
-
-            -- split_threshold = 100,
-            additional_instruction = "Respond in concise and lighthearted manner", -- (GPT-3 will probably deny this request, but GPT-4 complies)
-            -- highlight = {
-            --     icon = '', -- ''
-            --     group = 'Comment',
-            -- }
-        })
+	openai_api_key = "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", -- Get yours from platform.openai.com/account/api-keys
+	openai_model_id = "gpt-4", --gpt-4
+	-- split_threshold = 100,
+	additional_instruction = "You are an expert software engineer. I'm an experienced developer. Be concise. ", -- (GPT-3 will probably deny this request, but GPT-4 complies)
+	-- highlight = {
+	--     icon = '', -- ''
+	--     group = 'Comment',
+	-- }
+})
