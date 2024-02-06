@@ -106,7 +106,7 @@ return require("packer").startup(function(use)
         end,
     })
 
-    use("airblade/vim-gitgutter")
+    -- use("airblade/vim-gitgutter")
 
     use({
         "nvim-lualine/lualine.nvim",
@@ -127,11 +127,4 @@ return require("packer").startup(function(use)
         end,
     })
     use("NvChad/nvim-colorizer.lua")
-
-    use({
-        "stevearc/conform.nvim",
-        config = function()
-            require("conform").setup()
-        end,
-    })
 end)
